@@ -42,10 +42,10 @@ services:
     restart: unless-stopped
     network_mode: host
     environment:
-      - PUID=${PUID} # default user id, defined in .env
-      - PGID=${PGID} # default group id, defined in .env
-      - TZ=${TZ} # timezone, defined in .env
-      volumes:
+       - PUID=${PUID} # default user id, defined in .env
+       - PGID=${PGID} # default group id, defined in .env
+       - TZ=${TZ} # timezone, defined in .env
+    volumes:
         - /etc/localtime:/etc/localtime:ro
         - ${ROOT}/config/sonarr:/config # config files
         - ${ROOT}/Series:/tv # tv shows folder
@@ -56,10 +56,10 @@ services:
     restart: unless-stopped
     network_mode: host
     environment:
-      - PUID=${PUID} # default user id, defined in .env
-      - PGID=${PGID} # default group id, defined in .env
-      - TZ=${TZ} # timezone, defined in .env
-      volumes:
+       - PUID=${PUID} # default user id, defined in .env
+       - PGID=${PGID} # default group id, defined in .env
+       - TZ=${TZ} # timezone, defined in .env
+    volumes:
         - /etc/localtime:/etc/localtime:ro
         - ${ROOT}/config/radarr:/config # config files
         - ${ROOT}/Movies:/movies # movies folder
