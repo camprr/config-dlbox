@@ -38,7 +38,8 @@ services:
     volumes:
       - ${ROOT}/config/plex/db:/config # plex database
       - ${ROOT}/config/plex/transcode:/transcode # temp transcoded files
-      - ${ROOT}/complete:/data # media library
+      - ${ROOT}/Series:/data/Series # media library
+      - ${ROOT}/Movies:/data/Movies # media library
   sonarr:
     container_name: sonarr
     image: linuxserver/sonarr:latest
