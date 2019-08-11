@@ -67,4 +67,4 @@ services:
         - /etc/localtime:/etc/localtime:ro
         - ${ROOT}/config/radarr:/config # config files
         - ${ROOT}/Movies:/movies # movies folder
-        - ${ROOT}/downloads:/downloads # download folder
+        - ${ROOT}/Downloads:/downloads # download folder
